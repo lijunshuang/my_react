@@ -20,4 +20,8 @@
 day1-3/node_modules/*
 day1-3/images/*
 
+tuji/node_modules/*
+tuji/images/*
+tuji/app/components.1/*
+
 # !/node_modules/layer/

@@ -1,0 +1,61 @@
+h2{border-bottom:1px solid #ccc}
+
+ul{
+    &,li{list-style: none;margin:0px;padding:0px;}
+    li:nth-child(even){background:#eee}
+}
+table{
+    // width:500px;
+    border-collapse: collapse;
+    th,td{border:1px solid #ddd;padding:3px 10px;}
+    tr:nth-child(even){background:#eee}
+}
+button:focus{outline: none}
+.box{
+    overflow: hidden;
+    .box_c{width:80px;height:80px;float: left;}
+}
+.cur{color:red;font-weight: bold;}
+
+.students{
+    li{line-height: 35px;}
+    span{margin-right: 20px;}
+}
+
+.tuji_box{
+    width:460px;margin:20px auto;border: 1px solid #ddd;
+    h2{text-align: center;margin:10px 0px;}
+    .big_box{
+        width:100%;position: relative;
+        img{width:100%}
+        button{
+            position: absolute;top:50%;width:30px;height: 50px;line-height:42px;font-size:30px;text-align:center;border:none;background: rgba(0,0,0,.5);color:#fff;margin:-25px 0px 0px 0px;
+            &:hover{background:orange;}
+            &.leftbtn{left:0px;}
+            &.rightbtn{right:0px;}
+        }
+    }
+}
+.chooseStar{
+    padding-left:10px;margin-bottom:10px;display:flex;
+    button{
+        flex: 1;
+        margin-right: 10px;
+        border:none;background:#ddd;padding:5px 10px;cursor: pointer;
+        &.cur{background:orange;color:#fff}
+        &:focus{outline: none}
+    }
+}
+.imgList{
+    overflow: hidden;padding:10px 0px 0px;
+    li{
+        width:80px;float: left;margin-left:10px;cursor: pointer;
+        &.cur{
+            img{
+            border: 2px solid orange;position: relative;top:-2px;left:-2px;
+            }
+        }
+        img{width:100%}
+    }
+}
+
