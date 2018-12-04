@@ -1,0 +1,46 @@
+h2{border-bottom:1px solid #ccc}
+
+ul{
+    &,li{list-style: none;margin:0px;padding:0px;}
+    li:nth-child(even){background:#eee}
+}
+table{
+    // width:500px;
+    border-collapse: collapse;
+    th,td{border:1px solid #ddd;padding:3px 10px;}
+    tr:nth-child(even){background:#eee}
+}
+.box{
+    overflow: hidden;
+    .box_c{width:80px;height:80px;float: left;}
+}
+.cur{color:red;font-weight: bold;}
+
+.students{
+    li{line-height: 35px;}
+    span{margin-right: 20px;}
+}
+
+.chooseStar{
+    padding-left:30px;margin-bottom:10px;
+    button{
+        margin-right: 10px;
+        border:none;background:#ddd;padding:3px 8px;cursor: pointer;
+        &.cur{background:orange;color:#fff}
+        &:focus{outline: none}
+    }
+}
+.imgList{
+    overflow: hidden;
+    li{
+        width:62px;float: left;margin-right:10px;cursor: pointer;
+        &.cur{
+            img{
+            border: 2px solid orange;margin:-2px 0px 0px -2px
+            }
+        }
+        img{width:100%}
+    }
+    &:last-child{margin-right: 0px;}
+}
+

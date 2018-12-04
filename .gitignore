@@ -1,0 +1,23 @@
+# 1、忽略文件
+
+# *.bak               # 忽略所有扩展名为.bak的文件
+
+# !keep.bak      # 但keep.bak文件除外（不会被忽略）
+
+# temp/test.txt  # 忽略temp目录下的test.txt文件
+
+# temp/*.txt       # 忽略temp目录下所有扩展名为.txt的文件
+
+ 
+
+# 2、忽略目录
+
+# temp/       # 忽略temp目录下的所有目录和文件
+
+# temp/*/    # 忽略temp目录下的所有目录，但不会忽略该目录下的文件
+
+# 1. 在已忽略文件夹中不忽略指定文件夹
+day1-3/node_modules/*
+day1-3/images/*
+
+# !/node_modules/layer/
