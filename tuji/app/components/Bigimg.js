@@ -4,9 +4,7 @@ export default class Bigimg extends React.Component {
         super();//必须调用超类
     }
     render() {
-        return (<div className="big_box">
-                
-                    
+        return (<div className="big_box">   
                     <button className="leftbtn" onClick={()=>{
                         if(this.props.star=="guanxiaotong"&&this.props.idx==1){
                             this.props.changeStar("yangmi")
@@ -24,9 +22,8 @@ export default class Bigimg extends React.Component {
                             this.props.changeIdx(this.props.idx - 1)
                         }
                     }}>&lt;</button>
-                
-                <img src={`images/${this.props.star}/${this.props.idx}.jpg`} />
-                <button className="rightbtn" onClick={()=>{
+                    <img src={`images/${this.props.star}/${this.props.idx}.jpg`} />
+                    <button className="rightbtn" onClick={()=>{
                         if(this.props.star=="guanxiaotong"&&this.props.idx==5){
                             this.props.changeStar("jindong")
                             this.props.changeIdx(1)

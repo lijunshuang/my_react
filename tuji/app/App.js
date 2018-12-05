@@ -1,7 +1,7 @@
 import React from 'react';
-import Choosestar from "./components/Choosestar"; //明星名字
-import Bigimg from "./components/Bigimg" ;// 大图
-import Smallimg from "./components/Smallimg"; // 小图导航
+import Choosestar from "./components.1/Choosestar"; //明星名字
+import Bigimg from "./components.1/Bigimg" ;// 大图
+import Smallimg from "./components.1/Smallimg"; // 小图导航
 
 import "./styles/style.less";//引入样式文件
 
