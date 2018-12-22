@@ -24,4 +24,9 @@ tuji/node_modules/*
 tuji/images/*
 tuji/app/components.1/*
 
+cart/node_modules/*
+/node_modules/*
+
+
+
 # !/node_modules/layer/
