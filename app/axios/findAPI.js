@@ -56,7 +56,7 @@ export const findDailyprocurement = (qsObj) => {
 
     return {
         'total': results.length,
-        'results': results
+        'results': results.sort((a,b)=>qsObj.sortdirection*(a[qsObj.sortby]-b*[qsObj.sortby])).slice((qsObj.page - 1)*qsObj.pagesize, qsObj.page*qsObj.pagesize)
         // (function dd(){
         //     var arr = [];
         //     for (let i = 1; i <= qsObj.pagesize; i++) {
@@ -74,9 +74,12 @@ export const findDailyprocurement = (qsObj) => {
         //     return arr
         // })()
     }
-
-
 }
+
+
+
+
+
 
 
 

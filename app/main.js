@@ -1,6 +1,8 @@
 import React from 'react';
 import Dva from 'dva';
 import dailyprocurementModel from './model/dailyprocurementModel';
+import purchasandpurchasModel from './model/purchasandpurchasModel';
+import indexModel from './model/indexModel';
 // import createHistory from 'history/createBrowserHistory';
 import logger from "redux-logger";
 
@@ -15,6 +17,8 @@ const app = Dva({
 
 //设置model
 app.model(dailyprocurementModel)
+app.model(purchasandpurchasModel)
+app.model(indexModel)
 
 //设置路由
 app.router(route);

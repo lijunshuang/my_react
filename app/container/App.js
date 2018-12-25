@@ -12,7 +12,7 @@ class App extends React.Component {
         super();//必须调用超类
         this.state = {
             menus : [
-                {'c': '首页', 'e': 'index'},
+                {'c': '首页', 'e': 'Index'},
                 {'c': '采购管理', 'e': 'Purchase'},
                 {'c': '销售管理', 'e': 'Sales'},
             ]
